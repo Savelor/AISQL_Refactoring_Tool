@@ -1,6 +1,6 @@
 # AISQL Refactoring Tool  
 
-<img src="images/GUI1.png" alt="AISQL Optimizer GUI" width="800">
+<img src="Images/GUI1.png" alt="AISQL Optimizer GUI" width="800">
 
 **AI Refactoring tool** is a WinForms desktop application designed to analyze, refactor, and optimize T-SQL code using Microsoft Foundry Persistent Agents. 
 The goal is to assess T-SQL codebase, identify bad practices and anti-patterns, obsolete and deprecated code and provide a complete assessment and a new refactored T-SQL code which is:
@@ -22,7 +22,7 @@ It targets **DBAs, SQL Developers, and Performance Engineers** who want practica
 ##  Architecture
 **AI Refactoring tool** is a bridge between SQL Server and Microsoft Foundry agents. It runs on a common PC, connects to SQL Server as well as Microsoft Foundry. It retrieves the database schema details and T-SQL application code, and passes this information to the Agent to get the assessment results together with the new refactored code.
 
-<img src="images/AIFoundrySchema.png" alt="AISQL Optimizer Architecture" width="800">
+<img src="Images/AIFoundrySchema.png" alt="AISQL Optimizer Architecture" width="800">
 
 
 ##  Key Features
@@ -51,7 +51,7 @@ Everything happens in one window: no scripts to run, no context-switching. Pick 
 * **Work in bulk.** Multi-select via checkboxes and send dozens or hundreds of objects to the Agent in a single batch operation.
 * **The Impact Dashboard.** After a batch assessment, a dashboard summarizes every object by how many fixes were applied across **Security, Performance, Compliance, and Deprecations**. Instead of guessing where to begin, you can immediately spot the highest-impact objects and focus your review there, turning a vague "modernize the database" task into a prioritized, measurable plan. If you keep the Dashboard windows close to the main window, you can click the name of the object on the Dashboard, and inspect the corresponding source and optimized code on the main window.
 
-  <img src="images/Dashboard.png" alt="AISQL Optimizer GUI" width="800">
+  <img src="Images/Dashboard.png" alt="AISQL Optimizer GUI" width="800">
 
 ## 🔐 Security & Reliability
 - The application authenticates to Microsoft Foundry Agents using Microsoft Entra ID (Azure RBAC) and browser, via `InteractiveBrowserCredential`
