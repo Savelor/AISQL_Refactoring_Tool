@@ -85,7 +85,7 @@ The binding limit is not the character count but the **context window of the mod
 The key parameter is therefore the amount of tokens sent to the Agent on the first interaction. Most of this payload consists of the database schema and the index structure information. However, the tool has been successfully tested on databases with 1,000 tables and 1,500 indexes.
 
 ## 📖 Documentation
-- Run the Refactoring tool: [User Operational Guide](USER_GUIDE.md).
+- Run the Refactoring tool: **[User Operational Guide](USER_GUIDE.md)**.
 - Setup Agents in Microsoft Foundry: [Microsoft Foundry Agent Setup](AGENT_GUIDE.md)
   
 ---
