@@ -152,7 +152,7 @@ The key parameter is therefore the amount of tokens sent to the Agent on the fir
 > The .NET runtime is **not** required — the release is published self-contained (Windows x64).
 
 On first launch, open **Settings** and configure:
-- **Azure AI Foundry**: project endpoint, tenant, and the agent to use (sign-in happens in your browser).
+- **Microsoft Foundry**: project endpoint, tenant, and the agent to use (sign-in happens in your browser).
 - **SQL Server**: server, database, and authentication.
 
 ### Build from source (developers)
@@ -168,7 +168,7 @@ git clone https://github.com/<user>/<repo>.git
 
 - Windows 10/11 (x64)
 - Microsoft Edge WebView2 Runtime
-- Access to an Azure AI Foundry agent
+- Access to a Microsoft Foundry agent
 - A reachable SQL Server instance
   
 
