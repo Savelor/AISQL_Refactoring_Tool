@@ -48,7 +48,7 @@ database connection. It has three tabs: **AI Settings**, **SQL Connection**, and
 ### 🧠 AI Settings
 Connect the tool to your Azure AI Foundry project and choose the agent that will perform the optimizations. The Agent we want to use for this goal must be previously configured on the Azure AI Foundry portal, according to the guidelines exposed in the proper section [Microsoft Foundry Agent Setup](AGENT_GUIDE.md).
 
-<img src="images/AISettings.png" alt="Settings - AI Settings" width="600">
+<img src="Images/AISettings.png" alt="Settings - AI Settings" width="600">
 
 1. **Azure Tenant ID**: Enter the tenant ID of your Azure subscription.
 2. **Foundry project endpoint**: Paste the endpoint URL of your Azure AI Foundry project.
@@ -62,7 +62,7 @@ Connect the tool to your Azure AI Foundry project and choose the agent that will
 
 ### 🛢️ SQL Connection
 Configure the SQL Server instance and database the tool will analyze, and choose which object types to retrieve.
-<img src="images/SQLSettings.png" alt="Settings - AI Settings" width="600">
+<img src="Images/SQLSettings.png" alt="Settings - AI Settings" width="600">
 1. **SQL Server**: enter the server instance to connect to (e.g. `localhost\sqldashboard`).
    - **Supported versions:** SQL Server 2012 and later (on-premises and IaaS), plus Azure SQL Database and Azure SQL Managed Instance (PaaS).
    - **Authentication:** SQL Authentication and Windows Integrated on SQL Server; SQL Authentication on the Azure PaaS versions.
@@ -87,7 +87,7 @@ Configure the SQL Server instance and database the tool will analyze, and choose
 AISQL Refactoring tool gives you several ways to launch an optimization, plus a chat box to interact directly with the agent.
 
 #### 1. Optimize one or more selected objects
-<img src="images/OptimizeSelectedObjects.png" width="300">
+<img src="Images/OptimizeSelectedObjects.png" width="300">
 
 In the left panel, tick the checkbox next to each object you want to process,
 then click **Optimize selected objects**. The agent analyzes every checked object
@@ -95,7 +95,7 @@ in batch and fills the right panel with the optimized code, analysis, and summar
 Use this when you want to refactor several objects in one run.
 
 #### 2. Optimize the code shown in the window
-<img src="images/OptimizeWindowCode.png" width="300">
+<img src="Images/OptimizeWindowCode.png" width="300">
 
 Click **Optimize window code** to analyze whatever T-SQL is currently displayed
 in the center panel — without selecting an object from the list. Use this for
@@ -108,10 +108,10 @@ Right-click an object in the left panel to open a quick menu:
 - **Select item** — selects the object (loads its code into the center panel)
   so you can review it before deciding to optimize.
   
-<img src="images/ContextualMenu.png" width="300">
+<img src="Images/ContextualMenu.png" width="300">
 
 #### 4. Interacting with the agent (prompt box + GO!)
-<img src="images/GO.png" alt="Settings - AI Settings" width="100">
+<img src="Images/GO.png" alt="Settings - AI Settings" width="100">
 
 The text box at the bottom lets you send a free-text instructions to the agent to
 guide or refine the optimization on the selected objects on the left TreeView. Type your request — for example
@@ -128,10 +128,10 @@ icons are in the top-right corner of the main window.
 
 | Icon | Action | Description |
 |---|---|---|
-| <img src="images/Save.gif" alt="Save icon" height="28"> | **Save a Session** | Click the **Save** icon to write the current session to a file, including the loaded objects, the generated optimizations, and the analysis results. Choose a location and file name when prompted. Save regularly so you don't lose the work done on large batches. SQL Server name and Database name are saved together with session information. |
-| <img src="images/Load.gif" alt="Load icon" height="28"> | **Load a Session** | Click the **Load** icon to open a previously saved session file. The objects and their optimization results are restored into the panels, letting you review them or continue refactoring without re-running the agent.<br><br>**Note:** when loading a session file, the loaded content overrides the current session data.<br><br>- If the application is connected to the same server and database saved in the session, optimizations can leverage schema and index metadata.<br>- If the application is not connected to SQL Server, the agent can still optimize the code, but without schema information.<br>- If the application is connected to a different server or database, pay attention because there could be a mismatch between the code and the database schema, which can affect optimization quality. |
+| <img src="Images/Save.gif" alt="Save icon" height="28"> | **Save a Session** | Click the **Save** icon to write the current session to a file, including the loaded objects, the generated optimizations, and the analysis results. Choose a location and file name when prompted. Save regularly so you don't lose the work done on large batches. SQL Server name and Database name are saved together with session information. |
+| <img src="Images/Load.gif" alt="Load icon" height="28"> | **Load a Session** | Click the **Load** icon to open a previously saved session file. The objects and their optimization results are restored into the panels, letting you review them or continue refactoring without re-running the agent.<br><br>**Note:** when loading a session file, the loaded content overrides the current session data.<br><br>- If the application is connected to the same server and database saved in the session, optimizations can leverage schema and index metadata.<br>- If the application is not connected to SQL Server, the agent can still optimize the code, but without schema information.<br>- If the application is connected to a different server or database, pay attention because there could be a mismatch between the code and the database schema, which can affect optimization quality. |
 
 #### Dashboard
 The Dashboard summarizes all the objects (stored procedure, functions, etc) that have been assessed, with the related details, showing the number of optimizations implemented by the Agent on each single topic. Starting from this view you can start planning the items to refactor to improve the application.
 
-<img src="images/Dashboard.png" alt="Settings - AI Settings" width="650">
+<img src="Images/Dashboard.png" alt="Settings - AI Settings" width="650">
