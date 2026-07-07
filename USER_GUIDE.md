@@ -8,7 +8,7 @@ The three panels are laid out left to right following the natural workflow:
 * **Right: Refactored code & analysis.** Contains the new code produced by the Agent together with its full assessment: what was changed and why.
 
 This layout gives you a convenient **side-by-side** view — original on the left/center, refactored result and rationale on the right — so you can compare the Agent's work against the source at a glance, without switching windows.
-![AISQL Optimizer GUIplus](images/GUI1plus.png)
+![AISQL Optimizer GUIplus](Images/GUI1plus.png)
 
 ### Top Status Bar
 Shows the current session context at a glance:
