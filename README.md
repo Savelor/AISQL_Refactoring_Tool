@@ -11,7 +11,7 @@ The goal is to assess T-SQL codebase, identify bad practices and anti-patterns, 
 - Free of deprecated syntax
 
 
-Its key strength is scale and speed: it can analyze and refactor large amounts of existing SQL code in a very short time, **working through each object sequentially**, delivering a complete and consistent assessment on every stored procedure, function, batch you want to consider. You can connect to SQL Server on-premises, IaaS, PaaS, or just provide the code from documentation.  
+Its key strength is scale and speed: it can analyze and refactor large amounts of existing SQL code in a very short time, **working through each object sequentially**, delivering a complete and consistent assessment on every stored procedure, function, batch you have selected. You can connect to SQL Server on-premises, IaaS, PaaS, or just provide the code from documentation.  
 
 **AI Refactoring tool** Read-only by design: the tool proposes changes, it never applies them. **Nothing is deployed or executed against your database automatically**: every change is reviewed and applied by you.
 The intent is not to replace developers or DBAs, but to dramatically reduce the time required to review, refactor, and improve complex and large T-SQL codebases, leaving developers and DBAs in a supervisory role, with the responsibility for the final decisions and validation.
