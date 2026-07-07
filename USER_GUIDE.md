@@ -53,7 +53,7 @@ Connect the tool to your Azure AI Foundry project and choose the agent that will
 1. **Azure Tenant ID**: Enter the tenant ID of your Azure subscription.
 2. **Foundry project endpoint**: Paste the endpoint URL of your Azure AI Foundry project.
 3. Click **Connect** button to establish the connection. This button turns to green **Connected** when the successful connection has been estabilished.
-4. From **Select one Azure AI Agent from the list below**, the table lists the available agents with their **Name**, **Model**, and **Agent Id**. Tick the checkbox next to the agent you want to use (e.g. `CodeOptimizer5`, running `gpt-4o`).
+4. From **Select one Azure AI Agent from the list below**, the table lists the available agents with their **Name**, **Model**, and **Agent Id**. Tick the checkbox next to the agent you want to use (e.g. `SQLRefactoringAgent`, running `gpt-5.4`).
 5. Click **Save Selection** to confirm the chosen agent.
 6. Click **Return** to go back to the main window.
 
