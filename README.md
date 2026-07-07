@@ -82,7 +82,7 @@ The binding limit is not the character count but the **context window of the mod
 - If the combined input still exceeds the model's window, the service rejects the request. The tool catches this and shows a **clear, actionable message** (for example, *"the request exceeds the model's context window — reduce the selection or use a model with a larger context window"*) instead of a raw API error. In batch mode, the run continues with the remaining objects.
 
 ### Scalability
-The key parameter is therefore the amount of tokens sent to the Agent on the first interaction. The tool has been successfully tested on databases with 1,000 tables and 1,500 indexes.
+The key parameter is therefore the amount of tokens sent to the Agent on the first interaction. Most of this payload consists of the database schema and the index structure information. However, the tool has been successfully tested on databases with 1,000 tables and 1,500 indexes.
 
 ## 📖 Documentation
 - Run the Refactoring tool: [User Operational Guide](USER_GUIDE.md).
