@@ -81,6 +81,9 @@ The binding limit is not the character count but the **context window of the mod
 - **Recommendation: use a model with a context window of at least 512K tokens, and preferably 1M.** This gives enough headroom to process large objects together with the schema without hitting the limit.
 - If the combined input still exceeds the model's window, the service rejects the request. The tool catches this and shows a **clear, actionable message** (for example, *"the request exceeds the model's context window — reduce the selection or use a model with a larger context window"*) instead of a raw API error. In batch mode, the run continues with the remaining objects.
 
+### Scalability
+The key parameter is therefore the amount of tokens sent to the Agent on the first interaction. The tool has been successfully tested on databases with 1,000 tables and 1,500 indexes.
+
 ## 📖 Documentation
 - Run the Refactoring tool: [User Operational Guide](USER_GUIDE.md).
 - Setup Agents in Microsoft Foundry: [Microsoft Foundry Agent Setup](AGENT_GUIDE.md)
