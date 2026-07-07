@@ -147,7 +147,7 @@ The key parameter is therefore the amount of tokens sent to the Agent on the fir
 2. Extract it to a folder of your choice.
 3. Install the **Microsoft Edge WebView2 Runtime** if it isn't already on your machine
    (pre-installed on recent Windows): https://developer.microsoft.com/microsoft-edge/webview2/
-4. Run `AISQLRefactor.exe`.
+4. Run `AISQLOptimizer.exe`.
 
 > The .NET runtime is **not** required — the release is published self-contained (Windows x64).
 
