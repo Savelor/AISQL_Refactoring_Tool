@@ -86,7 +86,7 @@ The key parameter is therefore the amount of tokens sent to the Agent on the fir
 
 ## 📖 Documentation
 - Run the Refactoring tool: **[User Operational Guide](USER_GUIDE.md)**.
-- Setup Agents in Microsoft Foundry: [Microsoft Foundry Agent Setup](AGENT_GUIDE.md)
+- Setup Agents in Microsoft Foundry: **[Microsoft Foundry Agent Setup](AGENT_GUIDE.md)**
   
 ---
 ## 📋 Prerequisites
