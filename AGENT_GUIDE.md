@@ -17,7 +17,7 @@ Once the Agent has been created, we need to configure it to accept the proper da
 ### Instructions ### 
 A set of instructions that make the Agent follow a consistent, repeatable processing pattern. They are written as rules that formalize the issues and anti-patterns to **identify, explain, and fix**, so every object is assessed against the same criteria. Copy the contents into the agent's **Instructions** box.
 
-📄The file is here: [Instructions.md](Skills/Instructions.md?plain=1)
+📄The file is here: [Instructions.md](Skills/RefactoringInstructions.md?plain=1)
 
 ### Knowledge ###
 The knowledge consists of a file containing all deprecations in SQL Server. This file has been composed starting from official Microsoft documentation, and provides the Agent with all the details about each single code deprecation released over time by Microsoft. In this way, the Agent has additional specific information regarding deprecated use cases, grounded in official documents. To provide this file, open the **Tools** section and create an index providing the Knowledge file.
